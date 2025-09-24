@@ -8,7 +8,7 @@ export default  function SelectMenu(){
         dispatch(addRegionValue(e.target.value)) 
     }
      return (
-          <select className="w-full py-3 md:py-0 md:w-96 border rounded-md dark:bg-gray-900 divWidth" onChange={handleChange}>
+          <select className="w-full py-2 sm:py-3 ps-2 md:w-96 border rounded-md dark:bg-gray-900 divWidth" onChange={handleChange}>
                 <option value = "">Filter By Region</option>
                 <option value="Africa">Africa</option>
                 <option value="Americas">Americas</option>

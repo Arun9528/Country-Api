@@ -22,6 +22,6 @@ export default function DarkModebtn(){
         });
     }
      return (
-        <button type="button" className="cursor-pointer flex items-center justify-end  sm:text-lg font-medium" onClick={handleDarkMode}>{isDarkMode ? <FaMoon/> :<FaSun/>} &nbsp; {isDarkMode ? "Dark Mode" : "Light Mode"}</button>
+        <button type="button" className="cursor-pointer flex items-center justify-end text-xs min-[400px]:max-sm:text-sm sm:text-lg font-medium" onClick={handleDarkMode}>{isDarkMode ? <FaMoon/> :<FaSun/>} &nbsp; {isDarkMode ? "Dark Mode" : "Light Mode"}</button>
      )
 }

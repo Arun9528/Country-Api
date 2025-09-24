@@ -5,7 +5,8 @@ import Link from "next/link";
 export default function CountryCard({data}:{data:Pick<countryProps, "name" | "capital" | "flags" | "population" | "region">}){
     const population = data.population.toLocaleString("en-IN");
     return (
-        <Link href={`/${data.name.common}`} className="inline-block h-[25rem] sm:h-96 justify-self-center w-96 sm:w-72 border rounded-lg overflow-hidden">
+        <Link href={`/${data.name.common}`} className="inline-block h-[25rem] sm:h-96 justify-self-center 
+        w-72 min-[350px]:max-[420px]:w-80 min-[420px]:max-sm:w-96 sm:w-72 border rounded-lg overflow-hidden">
             <div className="relative w-full h-60 sm:h-52">
                 <Image src={data.flags.svg} alt={data.flags.alt} fill className="object-cover" priority/>
             </div>

@@ -69,18 +69,19 @@ export default function CountryName() {
       </Link>
       <div className="relative h-80 sm:h-96 w-full rounded-lg overflow-hidden lg:mt-12 shadow-2xl">
         {
-          countryName.flags.svg ? <Image
+          countryName.flags.svg ?
+           <Image
           src={countryName?.flags?.svg}
           alt={countryName?.flags?.alt}
           fill
           priority
-          className="object-cover"
+          className="object-cover "
         /> : null
         }
       </div>
       <div className="content-center">
         <h2 className="text-4xl font-semibold">{countryName?.name.common}</h2>
-        <div className="grid grid-cols-2 gap-2 mt-5">
+        <div className="grid grid-cols-1 min-[500px]:grid-cols-2 gap-2 mt-5">
           <p>
             <span className="font-medium">Native Name :</span>{" "}
             {countryName?.nativeName ? countryName.nativeName : "Not Found"}

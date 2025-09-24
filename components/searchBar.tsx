@@ -26,7 +26,7 @@ export default  function SearchBar(){
         <div>
             <input type="text" onChange={handleChange} 
             value={inputValue}
-            className="py-3 w-full md:w-96 border rounded-md outline-0 ps-2 divWidth "
+            className="py-2 sm:py-3 w-full md:w-96 border rounded-md outline-0 ps-2 divWidth "
             placeholder="Please Write a Country Name...."/>
         </div>
     )
